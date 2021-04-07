@@ -19,11 +19,15 @@ public class sample {
 		
 //		System.out.println(b);//22
 	
-		String str1 = "Hi";
-		String str2 = str1 + 100 + 100;
-		String str3 = 100 + 100 + str1;
+//		String str1 = "Hi";
+//		String str2 = str1 + 100 + 100;
+//		String str3 = 100 + 100 + str1;
+//		
+//		System.out.println(str2);//Hi100100
+//		System.out.println(str3);//200Hi
 		
-		System.out.println(str2);//Hi100100
-		System.out.println(str3);//200Hi
+		int num = (int) (100 * 1.1);
+		System.out.println(num);
+		
 	}
 }
