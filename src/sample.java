@@ -6,16 +6,16 @@ public class sample {
 //		num = 10;
 //		System.out.println(num);
 		
-		int a = 10;
-		int b = a++ + ++a;
+//		int a = 10;
+//		int b = a++ + ++a;
 
-		//a++
-		//int a = 11;
-		//int b = 10 + ++a;
-		
-		//++a
-		//int a = 11;
-		//int b = 10 + 12;
+//		//a++
+//		//int a = 11;
+//		//int b = 10 + ++a;
+//		
+//		//++a
+//		//int a = 11;
+//		//int b = 10 + 12;
 		
 //		System.out.println(b);//22
 	
@@ -26,8 +26,20 @@ public class sample {
 //		System.out.println(str2);//Hi100100
 //		System.out.println(str3);//200Hi
 		
-		int num = (int) (100 * 1.1);
-		System.out.println(num);
+//		int num = (int) (100 * 1.1);
+//		System.out.println(num);
+
+		
+		int a = 10;
+		int b = 20;
+		
+		if(a < b) {
+			System.out.println("low");
+		}else {
+			System.out.println("high");
+		}
+		
+		
 		
 	}
 }
