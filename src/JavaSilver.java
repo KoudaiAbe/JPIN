@@ -25,5 +25,17 @@ public class JavaSilver {
 //		boolean b = true;
 //		System.out.println(a<=b);//boolean型で大なり小なりは使えない
 //		System.out.println(a < b);
+		
+//		int a = 0;
+//		while(a < 5);
+//		
+//		do
+//			a++;//コンパイルエラー
+//			System.out.println(a);
+//		while(true);
+		
+//		for(int i = 0;long j = 2;i < 5;i++) {//違う型同士は処理出来ない
+//			System.out.println(i * j);
+		}
 	}
 }
