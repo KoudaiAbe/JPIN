@@ -36,6 +36,27 @@ public class JavaSilver {
 		
 //		for(int i = 0;long j = 2;i < 5;i++) {//違う型同士は処理出来ない
 //			System.out.println(i * j);
-		}
+//		}
+		
+		//ラムダ式
+		Runnable runner = () ->{
+			System.out.println("hello");
+		};
+		runner.run();//hello
+		
+		
+//		int cnt = 0;
+//		Runnable r = () ->{
+//			for(cnt = 0;cnt < 10;cnt++) {
+//				//Local variable cnt defined in an enclosing scope must be final or effectively final
+//				//コンパイルエラー,実質finalでないため
+//				System.out.println(cnt);
+//			}
+//		};
+//		new Thread(r).start();
+//		
+		
+		
+		
 	}
 }
