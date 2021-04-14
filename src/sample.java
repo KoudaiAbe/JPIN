@@ -1,45 +1,22 @@
 
 public class sample {
 	public static void main(String[] args){
-//		System.out.println("Hello JPIN2");
-//		int num;
-//		num = 10;
-//		System.out.println(num);
 		
-//		int a = 10;
-//		int b = a++ + ++a;
-
-//		//a++
-//		//int a = 11;
-//		//int b = 10 + ++a;
-//		
-//		//++a
-//		//int a = 11;
-//		//int b = 10 + 12;
+		int i = 3;
 		
-//		System.out.println(b);//22
-	
-//		String str1 = "Hi";
-//		String str2 = str1 + 100 + 100;
-//		String str3 = 100 + 100 + str1;
-//		
-//		System.out.println(str2);//Hi100100
-//		System.out.println(str3);//200Hi
-		
-//		int num = (int) (100 * 1.1);
-//		System.out.println(num);
-
-		
-		int a = 10;
-		int b = 20;
-		
-		if(a < b) {
-			System.out.println("low");
-		}else {
-			System.out.println("high");
+		switch(i) {
+			case 1:System.out.println("one");
+					break;
+			
+			case 2:System.out.println("two");
+					break;
+			
+			case 3:System.out.println("three");
+					break;
+			
+			default:System.out.println("other");
+					break;
 		}
-		
-		
 		
 	}
 }
