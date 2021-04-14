@@ -1,17 +1,17 @@
 
 public class sample {
 	public static void main(String[] args){
-				
-		for(int i = 0;i < 3;i++) {
-			for(int j = 0;j < 3;j++) {
-				System.out.print("*");
-			}
-			System.out.println();
-			
-//			***
-//			***
-//			***
-
-		}
+		
+		int i = 0;
+		
+//		条件分岐に入る前に判定する
+//		while(i < 5) {
+//			System.out.println("hello");
+//			i++;
+//		}
+//		最低一回実行する、条件の判定が実行後に判定される		
+		do {
+			System.out.println("hello");
+		}while(i < 5);
 	}
 }
