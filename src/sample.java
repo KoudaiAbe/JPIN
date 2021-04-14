@@ -1,16 +1,22 @@
 
 public class sample {
 	
-	public static void test(int num) {
+	public static int test(int num) {
 		num = num * 2;
-		System.out.println(num);//200
+		return num;
+		//System.out.println(num);//200
 	}
 	
 	
 	public static void main(String[] args) {
-		int num = 100;
-		test(num);
-		System.out.println(num);//100
+//		int num = 100;
+//		int result = test(num);
+//		System.out.println(num);//100
+//		System.out.println(result);//200
+		
+		String str = "100";
+		int result = Integer.parseInt(str);
+		System.out.println(result * 5);//500
 	}
 	
 	//	public static void main(String[] args){
