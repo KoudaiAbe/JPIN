@@ -56,22 +56,26 @@ public class JavaSilver {
 //		new Thread(r).start();
 //		
 		//API
-		char a = '0';
-		int num = 0;
+//		char a = '0';
+//		int num = 0;
+//		
+//		if(Character.isAlphabetic(a)) {//アルファベットかどうか調べる
+//			num++;
+//		}
+//		
+//		if(Character.isDigit(a)) {//文字が数字がどうか調べる
+//			num++;
+//		}
+//		
+//		if(Character.isLowerCase(a)) {//大文字か小文字かを調べる
+//			num++;
+//		}
+//		
+//		System.out.println(num);
 		
-		if(Character.isAlphabetic(a)) {//アルファベットかどうか調べる
-			num++;
-		}
-		
-		if(Character.isDigit(a)) {//文字が数字がどうか調べる
-			num++;
-		}
-		
-		if(Character.isLowerCase(a)) {//大文字か小文字かを調べる
-			num++;
-		}
-		
-		System.out.println(num);
+		//要素数を0にしているとハッシュコードを返すよ
+		int [] array = new int[0];
+		System.out.println(array);//[I@d716361
 		
 	}
 }

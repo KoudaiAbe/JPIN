@@ -69,9 +69,5 @@ public class sample {
 ////			System.out.println(array);
 ////			break;
 ////		}
-//		
-//		
-//		
-//		
 //	}
 }
