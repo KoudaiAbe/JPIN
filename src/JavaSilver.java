@@ -74,8 +74,19 @@ public class JavaSilver {
 //		System.out.println(num);
 		
 		//要素数を0にしているとハッシュコードを返すよ
-		int [] array = new int[0];
-		System.out.println(array);//[I@d716361
+//		int [] array = new int[0];
+//		System.out.println(array);//[I@d716361
 		
+		//continueで繰り返しの制御
+		int[] array = {1,2,3,4,5};
+		int total = 0;
+		
+		for(int i : array) {
+			if(i % 2 == 0) {
+				continue;
+//				total += i;
+			}
+			System.out.println(total);
+		}
 	}
 }
