@@ -78,15 +78,20 @@ public class JavaSilver {
 //		System.out.println(array);//[I@d716361
 		
 		//continueで繰り返しの制御
-		int[] array = {1,2,3,4,5};
-		int total = 0;
+//		int[] array = {1,2,3,4,5};
+//		int total = 0;
+//		
+//		for(int i : array) {
+//			if(i % 2 == 0) {
+//				continue;
+////				total += i;
+//			}
+//			System.out.println(total);
+//		}
 		
-		for(int i : array) {
-			if(i % 2 == 0) {
-				continue;
-//				total += i;
-			}
-			System.out.println(total);
-		}
+		//indexOfは存在しない文字列があると−１を返す
+		String str = "abcde";
+		System.out.println(str.indexOf("abcdef"));
+	
 	}
 }
