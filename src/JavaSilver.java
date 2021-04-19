@@ -90,8 +90,20 @@ public class JavaSilver {
 //		}
 		
 		//indexOfは存在しない文字列があると−１を返す
-		String str = "abcde";
-		System.out.println(str.indexOf("abcdef"));
+//		String str = "abcde";
+//		System.out.println(str.indexOf("abcdef"));
+		
+//		while文
+//		while(!この世の終わり)｛
+//			day++
+//		｝
+		
+		int i = 0;
+		while(i < 3) {
+			System.out.println(i);
+			i++;
+		}
+		System.out.println("end");
 	
 	}
 }
