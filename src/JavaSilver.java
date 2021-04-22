@@ -98,12 +98,19 @@ public class JavaSilver {
 //			day++
 //		｝
 		
-		int i = 0;
-		while(i < 3) {
-			System.out.println(i);
-			i++;
-		}
-		System.out.println("end");
+//		int i = 0;
+//		while(i < 3) {
+//			System.out.println(i);
+//			i++;
+//		}
+//		System.out.println("end");
 	
+		int [] a;
+		int b[];
+		int[][] c;
+		int d[][];
+		int[] e[];
+		int[][] f[];
+		
 	}
 }
