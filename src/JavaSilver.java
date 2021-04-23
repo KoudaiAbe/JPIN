@@ -105,12 +105,23 @@ public class JavaSilver {
 //		}
 //		System.out.println("end");
 	
-		int [] a;
-		int b[];
-		int[][] c;
-		int d[][];
-		int[] e[];
-		int[][] f[];
+//		int [] a;
+//		int b[];
+//		int[][] c;
+//		int d[][];
+//		int[] e[];
+//		int[][] f[];
+
+		
+		String val = "A";
+		Function f = (val) -> {
+			System.out.println(val);
+		};
 		
 	}
+}
+
+
+interface Function{
+	void test(String val);
 }
