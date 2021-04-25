@@ -112,16 +112,29 @@ public class JavaSilver {
 //		int[] e[];
 //		int[][] f[];
 
-		
-		String val = "A";
-		Function f = (val) -> {
-			System.out.println(val);
-		};
+//		
+//		String val = "A";
+//		Function f = (val) -> {
+//			System.out.println(val);
+//		};
+
+		A a = new B();
 		
 	}
 }
 
-
-interface Function{
-	void test(String val);
+class A{
+	public A() {
+		System.out.println("A");
+	}
 }
+
+class B extends A{
+	public B() {
+		System.out.println("B");
+	}
+}
+
+//interface Function{
+//	void test(String val);
+//}
