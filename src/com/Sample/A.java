@@ -1,0 +1,7 @@
+package com.Sample;
+
+public class A {
+	public void hello() {
+		System.out.println("hello");
+	}
+}
