@@ -9,6 +9,7 @@ public class Sample {
 
 //		com.Sample.A a = new com.Sample.A();
 		A a = new A();
+		System.out.println(a);
 
 //		Singleton a = Singleton.getInstance();
 //		Singleton b = Singleton.getInstance();
