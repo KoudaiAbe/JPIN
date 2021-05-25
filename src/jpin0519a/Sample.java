@@ -1,14 +1,10 @@
 package jpin0519a;
 
-//アスタリスクよりも正確に記述をする
-//import com.Sample.*;
-import com.Sample.A;
-
 public class Sample {
 	public static void main(String[] args) {
 
-//		com.Sample.A a = new com.Sample.A();
-		A a = new A();
+		com.Sample.A a = new com.Sample.A();
+//		A a = new A();
 		System.out.println(a);
 
 //		Singleton a = Singleton.getInstance();
