@@ -7,6 +7,7 @@ public class B extends A {
 		//前処理
 		System.out.println("Hello,B");
 
+		//無くても問題なし、暗黙的に処理してくれる部分
 		super.hello();
 
 		//後処理
