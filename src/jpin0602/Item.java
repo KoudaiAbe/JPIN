@@ -1,5 +1,7 @@
 package jpin0602;
 
+import java.util.Objects;
+
 public class Item {
 	private String name;
 	private int price;
@@ -18,6 +20,13 @@ public class Item {
 		return price;
 	}
 
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name);
+	}
+
+
 	@Override
 	public boolean equals(Object obj) {
 
@@ -33,10 +42,5 @@ public class Item {
 		Item target = (Item) obj;
 		return this.name.equals(target.name);
 	}
-	
-	@Override
-	public int hashCode() {
-		// TODO 自動生成されたメソッド・スタブ
-		return super.hashCode();
-	}
+
 }
