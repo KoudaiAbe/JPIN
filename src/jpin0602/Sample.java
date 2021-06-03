@@ -20,14 +20,32 @@ public class Sample {
 //			System.out.println(n);
 //		}
 
-		try{
-			int[] array = null;
-			array[3] = 10;
-		}catch(NullPointerException | ArrayIndexOutOfBoundsException e){
-			System.out.println("error");
-		}
+//		try{
+//			int[] array = null;
+//			array[3] = 10;
+//		}catch(NullPointerException | ArrayIndexOutOfBoundsException e){
+//			System.out.println("error");
+//		}finally {
+//			System.out.println("final");
+//		}
+//
+//		System.out.println("fin");
 
-		System.out.println("fin");
+
+//		try {
+//			A a = new A();
+//			a.hello(null);
+//		}catch (SampleException e) {
+//			// TODO: handle exception
+//			System.out.println(e.getMessage());
+//		}
+
+		A a = new A();
+		try {
+			a.hello();
+		} catch (SampleException e) {
+			System.out.println("goal");
+		}
 
 	}
 
