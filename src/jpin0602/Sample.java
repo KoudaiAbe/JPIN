@@ -40,6 +40,7 @@ public class Sample {
 //			System.out.println(e.getMessage());
 //		}
 
+		//エラーハンドリング
 		A a = new A();
 		try {
 			a.hello();
