@@ -18,5 +18,4 @@ public class TypingProblem {
 		public String getProblem(int i) {
 			return problem.get(i);
 		}
-
 }

@@ -20,8 +20,11 @@ public class Sample {
 
 			String str = br.readLine();
 
-			if(problem.getProblem(i).equals(str));
+			if(problem.getProblem(i).equals(str)) {
+
+			}else {
 				continue;
+			}
 		}
 //		while(true) {
 //			System.out.println("> ");
