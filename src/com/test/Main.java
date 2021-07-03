@@ -1,10 +1,10 @@
-package com.sample3;
+package com.test;
 
 public class Main {
 	public static void main(String[] args) {
 		
 		Process p = Process.getInstance();
-		p.execute();
+		p.execute(new task(Type.A,"Hello"));
 		
 	}
 }
