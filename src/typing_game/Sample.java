@@ -10,26 +10,26 @@ public class Sample {
 
 
 		TypingProblem problem = new TypingProblem();
+
 		problem.add("abc");
 		problem.add("def");
 		problem.add("ghi");
 
-		for(int i = 0; i < 6;i++) {
-			System.out.println(problem.getProblem(i));
-			System.out.println("> ");
-
-			String str = br.readLine();
-
-			if(problem.getProblem(i).equals(str)) {
-
-			}else {
-				continue;
-			}
-		}
-//		while(true) {
+//		for(int i = 0; i < 6;i++) {
+//			System.out.println(problem.getProblem(i));
 //			System.out.println("> ");
 //			String str = br.readLine();
-//			System.out.println(str);
+//
+//			if(problem.getProblem(i).equals(str)) {
+//
+//			}else {
+//				continue;
+//			}
 //		}
+		while(true) {
+			System.out.println("> ");
+			String str = br.readLine();
+			System.out.println(str);
+		}
 	}
 }
