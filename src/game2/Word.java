@@ -2,7 +2,6 @@ package game2;
 
 
 class Word {
-
     //問題
 	private String[] word
     = {"Java","Eclipse","Oracle","Android","kotlin","Docker","C++","PostgresSQL","MySQL","Python"};
