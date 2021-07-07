@@ -49,11 +49,6 @@ public class Examination implements Iterable<Question> {
 			return false;
 		}
 
-		if(this.current != null && this.current.isCleare()) {
-			index++;
-			this.current = this.questions.get(index);
-		}
-
 		return true;
 	}
 
@@ -61,6 +56,11 @@ public class Examination implements Iterable<Question> {
 	public Question next() {
 
 		if(this.current == null) {
+			this.current = this.questions.get(index);
+		}
+
+		if(this.current != null && this.current.isCleare()) {
+			index++;
 			this.current = this.questions.get(index);
 		}
 
