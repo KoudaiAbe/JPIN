@@ -62,6 +62,7 @@ public class Sample {
 		Date tmp = formatter.parse("2021-01-99");
 		cal.setTime(tmp);
 
+		cal.add(Calendar.YEAR,1);
 		cal.add(Calendar.MONTH,1);
 		System.out.println(formatter.format(cal.getTime()));
 
