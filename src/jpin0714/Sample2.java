@@ -1,6 +1,9 @@
 package jpin0714;
 
-import java.io.InputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
 
 public class Sample2 {
 	public static void main(String[] args) throws Exception {
@@ -23,9 +26,23 @@ public class Sample2 {
 //		in.close();
 
 
-		InputStream is = System.in;
+//		InputStream is = System.in;
+//		InputStreamReader isr = new InputStreamReader(is);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 
+		FileWriter fw = new FileWriter("sample.txt");
+		BufferedWriter out = new BufferedWriter(fw);
 
+		try(br;out){
+			String line = null;
+			while((line = br.readLine()).equals("exit") == false) {
+//				System.out.println(line);
+				out.write(line);
+				out.newLine();
+			}
+		}
+
+		out.flush();
 	}
 }
