@@ -1,5 +1,6 @@
 package jpin0707;
 
+
 public class Question {
 
 	private String word;
@@ -10,28 +11,24 @@ public class Question {
 		this.word = word;
 	}
 
-
 	public boolean test(String answer) {
-
-		this.isCleare() = word.equals(answer);
-
-		if(clear == false) {
+		this.clear = word.equals(answer);
+		if (this.clear == false) {
 			failCount++;
 		}
-		return clear;
+		return this.clear;
 	}
-
 
 	public String getWord() {
 		return word;
 	}
 
-
 	public int getFailCount() {
 		return failCount;
 	}
 
-	public boolean isCleare() {
-		return this.isCleare();
+	public boolean isClear() {
+		return this.clear;
 	}
+
 }

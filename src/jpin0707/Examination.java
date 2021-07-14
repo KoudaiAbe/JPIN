@@ -4,32 +4,30 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Examination implements Iterable<Question> {
+public class Examination implements Iterator<Question> {
 
 	private List<Question> questions = new ArrayList<>();
 	private Dictionary dic;
 	private Question current;
 	private int index = 0;
 
-
 	public Examination() {
 		this(20);
 	}
 
 	public Examination(int size) {
-		try{
-			if(dic == null) {
+		try {
+			if (dic == null) {
 				dic = new Dictionary();
 			}
 			dic.shuffle();
-		}catch(Exception e) {
+		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 
-
-		for(int i = 0;i < size - 1; i++) {
+		for (int i = 0; i < size - 1; i++) {
 			String word = dic.get(i);
-			if(word == null) {
+			if (word == null) {
 				break;
 			}
 			this.questions.add(new Question(word));
@@ -37,33 +35,23 @@ public class Examination implements Iterable<Question> {
 	}
 
 	@Override
-	public Iterator<Question> iterator(){
-		return this.questions.iterator();
-	}
-
-
-	@Override
 	public boolean hasNext() {
-
-		if(this.questions.size() <= index) {
-			return false;
-		}
-
-		return true;
+		return this.index < this.questions.size() - 1;
 	}
 
 	@Override
 	public Question next() {
 
-		if(this.current == null) {
+		if (this.current == null) {
 			this.current = this.questions.get(index);
 		}
 
-		if(this.current != null && this.current.isCleare()) {
+		if (this.current.isClear()) {
 			index++;
 			this.current = this.questions.get(index);
 		}
 
 		return current;
 	}
+
 }
