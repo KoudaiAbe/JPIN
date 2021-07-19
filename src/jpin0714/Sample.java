@@ -68,9 +68,5 @@ public class Sample {
 			return false;
 
 		}
-
 	}
-
-
-
 }
